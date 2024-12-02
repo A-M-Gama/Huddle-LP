@@ -47,7 +47,13 @@ header .logo {
     border: none;
     margin-top: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-} 
+}
+
+.container .content .register:hover {
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
 
 .footer {
     display: flex;
@@ -62,6 +68,11 @@ header .logo {
     border: 1px solid #fff;
     padding: 15px;
     border-radius: 40px;
+}
+
+.footer a .fab:hover {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
 }
 
 .footer a .fab.fa-facebook-f {
