@@ -1,33 +1,82 @@
 @media (max-width: 1115px) {
+    body {
+        background: url(../images/bg-mobile.svg) center center no-repeat hsl(257, 40%, 49%);
+        background-size: cover;
+    }
+    
+    header .logo {
+        margin: 40px 80px;
+    }
+
     .container {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .container .content {
         max-width: 710px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .content .register {
+        align-self: center;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .footer nav .socials a .fab {
+        font-size: 1.3em;
+        padding: 10px;
+    }
+
+    .footer nav .socials a .fab.fa-facebook-f {
+        padding: 10px 13px;
     }
 }
 
 @media (max-width: 650px) {
-    body {
-        background-image: url(../images/bg-mobile.svg);
-    }
-
     header .logo {
-        width: 40%;
+        margin: 40px 50px;
     }
+.container .content h1 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 3em;
+    text-transform: capitalize;
+    margin: 40px 0 52.5px;
+    width: 340px;
+}
 
-    .container {
-        gap: 0;
-        text-align: center;
-    }
-
+.container .content p {
+    font-size: 1.35em;
+    max-width: 320px;
+}
     .container .content h1 {
-        margin: 15px;
+        margin: 25px;
+        font-size: 2.3em;
+        width: 300px;
     }
+    
+    .container .content p {
+        font-size: 1.5em;
+        width: 275px;
+    }
+}
 
-    .footer {
-        margin: 15px;
-        justify-content: center;
+@media (max-width: 500px) {
+    header .logo {
+        margin: 40px 35px;
+        width: 35%;
+    }
+}
+
+@media (max-width: 455px) {
+    header .logo {
+        margin: 40px 25px;
+        width: 30%;
     }
 }

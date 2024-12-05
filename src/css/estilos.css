@@ -4,6 +4,7 @@
 
 html {
     font-size: 62.5%;
+    margin: 0 1;
 }
 
 body {
@@ -12,6 +13,9 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     color: #fff;
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 header .logo {
@@ -26,6 +30,12 @@ header .logo {
 
 .container .image img {
     width: 100%;
+    min-width: 365px;
+}
+
+.container .content {
+    display: flex;
+    flex-direction: column;
 }
 
 .container .content h1 {
@@ -34,16 +44,19 @@ header .logo {
     font-size: 3em;
     text-transform: capitalize;
     margin: 40px 0 52.5px;
+    width: 340px;
 }
 
 .container .content p {
     font-size: 1.35em;
+    max-width: 315px;
 }
 
 .container .content .register {
     color: hsl(257, 40%, 49%);
     padding: 10px 50px;
     border-radius: 20px;
+    align-self: flex-start;
     border: none;
     margin-top: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -53,16 +66,23 @@ header .logo {
     cursor: pointer;
     background-color: hsl(300, 69%, 71%);
     color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .footer {
     display: flex;
     justify-content: flex-end;
-    padding: 30px 100px;
+    align-content: center;
+    margin: 30px 100px;
     gap: 10px;
 }
 
-.footer a .fab {
+.footer nav .socials {
+    display: flex;
+    gap: 10px;
+}
+
+.footer nav .socials a .fab {
     font-size: 2em;
     color: #fff;
     border: 1px solid #fff;
@@ -70,11 +90,12 @@ header .logo {
     border-radius: 40px;
 }
 
-.footer a .fab:hover {
+.footer nav .socials a .fab:hover {
     color: hsl(300, 69%, 71%);
     border: 1px solid hsl(300, 69%, 71%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.footer a .fab.fa-facebook-f {
+.footer nav .socials a .fab.fa-facebook-f {
     padding: 15px 19px;
 }
