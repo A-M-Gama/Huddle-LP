@@ -2,6 +2,8 @@
 
 Projeto de uma landing page proporcionado pelo Frontend Mentor
 
+## Tecnologias Utilizadas
+
 ### HTML
 - Tags semânticas
 
